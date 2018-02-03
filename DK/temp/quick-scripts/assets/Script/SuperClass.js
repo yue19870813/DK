@@ -4,7 +4,7 @@ cc._RF.push(module, '7cd6am2IKhCU7zkCn2hKJMV', 'SuperClass', __filename);
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property, executionOrder = _a.executionOrder;
-var SuperClass = (function (_super) {
+var SuperClass = /** @class */ (function (_super) {
     __extends(SuperClass, _super);
     function SuperClass() {
         var _this = _super !== null && _super.apply(this, arguments) || this;

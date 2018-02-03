@@ -5,7 +5,7 @@ cc._RF.push(module, '58ad30XPqVHQoduXxkcQ/vu', 'ChildClass');
 Object.defineProperty(exports, "__esModule", { value: true });
 var SuperClass_1 = require("./SuperClass");
 var ccclass = cc._decorator.ccclass;
-var ChildClass = (function (_super) {
+var ChildClass = /** @class */ (function (_super) {
     __extends(ChildClass, _super);
     function ChildClass() {
         return _super !== null && _super.apply(this, arguments) || this;
