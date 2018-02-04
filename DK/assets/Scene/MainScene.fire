@@ -63,7 +63,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 8
+        "__id__": 9
+      },
+      {
+        "__id__": 10
       }
     ],
     "_prefab": null,
@@ -287,7 +290,11 @@
     },
     "duration": 0.1,
     "zoomScale": 1.1,
-    "clickEvents": [],
+    "clickEvents": [
+      {
+        "__id__": 8
+      }
+    ],
     "_N$interactable": true,
     "_N$enableAutoGrayEffect": false,
     "_N$normalColor": {
@@ -327,6 +334,13 @@
     }
   },
   {
+    "__type__": "cc.ClickEvent",
+    "target": null,
+    "component": "",
+    "handler": "",
+    "customEventData": ""
+  },
+  {
     "__type__": "cc.Canvas",
     "_name": "",
     "_objFlags": 0,
@@ -341,5 +355,14 @@
     },
     "_fitWidth": false,
     "_fitHeight": true
+  },
+  {
+    "__type__": "4ab50wNbAlB94cWmj2J6OFS",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true
   }
 ]

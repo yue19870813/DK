@@ -229,11 +229,6 @@
     "meta": 1510996847000,
     "relativePath": "Script"
   },
-  "58ad3d17-3ea5-4742-876e-5f191c43fbee": {
-    "asset": 1510996847000,
-    "meta": 1517665666000,
-    "relativePath": "Script/ChildClass.ts"
-  },
   "2d2f792f-a40c-49bb-a189-ed176a246e49": {
     "asset": 1517667224000,
     "meta": 1517667224000,
@@ -253,11 +248,6 @@
     "asset": 1510996847000,
     "meta": 1510996847000,
     "relativePath": "Texture"
-  },
-  "7cd6a9b6-20a8-4253-bce4-0a7da1289315": {
-    "asset": 1510996847000,
-    "meta": 1517665666000,
-    "relativePath": "Script/SuperClass.ts"
   },
   "a8027877-d8d6-4645-97a0-52d4a0123dba": {
     "asset": 1510996847000,
@@ -295,18 +285,13 @@
     "relativePath": "Script/game/hello"
   },
   "6c52e953-a742-4abe-ae9d-4e8e5bd3c7fa": {
-    "asset": 1517667487000,
-    "meta": 1517667487000,
+    "asset": 1517671375000,
+    "meta": 1517671375000,
     "relativePath": "Scene/MainScene.fire"
   },
-  "23039ebc-ae92-4f98-ae7c-487881ab3ce6": {
-    "asset": 1517667376000,
-    "meta": 1517667378000,
-    "relativePath": "Script/game/hello/HelloScript.ts"
-  },
   "92adb974-7ad2-46e4-b25d-9063099928bf": {
-    "asset": 1517667479000,
-    "meta": 1517667485000,
+    "asset": 1517727003000,
+    "meta": 1517727003000,
     "relativePath": "Scene/GameScene.fire"
   },
   "e38fe1c3-df3c-4330-a27a-7c075d920052": {
@@ -314,9 +299,69 @@
     "meta": 1517668274000,
     "relativePath": "Script/game/main"
   },
+  "23039ebc-ae92-4f98-ae7c-487881ab3ce6": {
+    "asset": 1517668310000,
+    "meta": 1517669147000,
+    "relativePath": "Script/game/hello/HelloScript.ts"
+  },
   "4ab50c0d-6c09-41f7-8716-9a3d89e8e152": {
-    "asset": 1517668282000,
-    "meta": 1517668291000,
+    "asset": 1517669142000,
+    "meta": 1517669147000,
     "relativePath": "Script/game/main/MainScript.ts"
+  },
+  "c5b4b51f-8f10-47bd-ac9b-38b51ad26e9d": {
+    "asset": 1517720442000,
+    "meta": 1517720511000,
+    "relativePath": "Texture/bg/bg_1.jpg"
+  },
+  "9a5280c2-5f1f-46ae-b878-f2aa2a78f58a": {
+    "asset": 1517720639000,
+    "meta": 1517720660000,
+    "relativePath": "Texture/bg/bg_2.jpeg"
+  },
+  "1810d86e-3f83-4605-a27b-701e360518b1": {
+    "asset": 1517720684000,
+    "meta": 1517720684000,
+    "relativePath": "Texture/bg"
+  },
+  "b4225775-ce39-4a8a-9b9b-60ff32cb3643": {
+    "asset": 1517720896000,
+    "meta": 1517720896000,
+    "relativePath": "resources"
+  },
+  "43dc8bce-4dfa-45ed-8a45-73aeaafc68e5": {
+    "asset": 1517721107000,
+    "meta": 1517721107000,
+    "relativePath": "resources/prefabs"
+  },
+  "40ad8a8e-afdc-42c8-886e-366fe6b41d12": {
+    "asset": 1517726886000,
+    "meta": 1517726886000,
+    "relativePath": "resources/prefabs/bloxx.prefab"
+  },
+  "a50c793a-fe5f-4547-8a3b-858e52af7ecd": {
+    "asset": 1517724935000,
+    "meta": 1517724935000,
+    "relativePath": "Script/game/bloxx"
+  },
+  "bd37d54b-cd6b-4cec-a13f-6d53e2db97e9": {
+    "asset": 1517726294000,
+    "meta": 1517726336000,
+    "relativePath": "Script/game/GameControler.ts"
+  },
+  "980c77fd-5c8f-4a5c-9d20-9221e6d0f650": {
+    "asset": 1517726714000,
+    "meta": 1517726716000,
+    "relativePath": "Script/game/bloxx/BloxxScript.ts"
+  },
+  "3e3d4800-f531-45c6-918e-944022aeb4af": {
+    "asset": 1517726905000,
+    "meta": 1517726905000,
+    "relativePath": "Script/game/game"
+  },
+  "545b686a-527a-4416-aa99-4ba05c0aea4c": {
+    "asset": 1517726972000,
+    "meta": 1517726975000,
+    "relativePath": "Script/game/game/GameScript.ts"
   }
 }
