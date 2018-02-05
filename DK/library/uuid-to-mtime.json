@@ -220,12 +220,12 @@
     "relativePath": "prefab/webview.prefab"
   },
   "29f52784-2fca-467b-92e7-8fd9ef8c57b7": {
-    "asset": 1510996847000,
+    "asset": 1517667485000,
     "meta": 1510996847000,
     "relativePath": "Scene"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1510996847000,
+    "asset": 1517726999000,
     "meta": 1510996847000,
     "relativePath": "Script"
   },
@@ -245,7 +245,7 @@
     "relativePath": "Script/Lib/Fetch.js"
   },
   "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
-    "asset": 1510996847000,
+    "asset": 1517720695000,
     "meta": 1510996847000,
     "relativePath": "Texture"
   },
@@ -265,7 +265,7 @@
     "relativePath": "prefab/toggleGroup.prefab"
   },
   "9d724070-bb29-4bdd-aaf8-31e79b3514eb": {
-    "asset": 1517666800000,
+    "asset": 1517726907000,
     "meta": 1517666800000,
     "relativePath": "Script/game"
   },
@@ -280,22 +280,22 @@
     "relativePath": "Script/data"
   },
   "79eb4095-4ccf-4ed7-bd25-05233888985b": {
-    "asset": 1517666878000,
+    "asset": 1517666898000,
     "meta": 1517666878000,
     "relativePath": "Script/game/hello"
   },
   "6c52e953-a742-4abe-ae9d-4e8e5bd3c7fa": {
-    "asset": 1517671375000,
-    "meta": 1517671375000,
+    "asset": 1517750264000,
+    "meta": 1517750264000,
     "relativePath": "Scene/MainScene.fire"
   },
   "92adb974-7ad2-46e4-b25d-9063099928bf": {
-    "asset": 1517727003000,
-    "meta": 1517727003000,
+    "asset": 1517842307000,
+    "meta": 1517842307000,
     "relativePath": "Scene/GameScene.fire"
   },
   "e38fe1c3-df3c-4330-a27a-7c075d920052": {
-    "asset": 1517668274000,
+    "asset": 1517668290000,
     "meta": 1517668274000,
     "relativePath": "Script/game/main"
   },
@@ -320,27 +320,27 @@
     "relativePath": "Texture/bg/bg_2.jpeg"
   },
   "1810d86e-3f83-4605-a27b-701e360518b1": {
-    "asset": 1517720684000,
+    "asset": 1517720695000,
     "meta": 1517720684000,
     "relativePath": "Texture/bg"
   },
   "b4225775-ce39-4a8a-9b9b-60ff32cb3643": {
-    "asset": 1517720896000,
+    "asset": 1517721117000,
     "meta": 1517720896000,
     "relativePath": "resources"
   },
   "43dc8bce-4dfa-45ed-8a45-73aeaafc68e5": {
-    "asset": 1517721107000,
+    "asset": 1517721122000,
     "meta": 1517721107000,
     "relativePath": "resources/prefabs"
   },
   "40ad8a8e-afdc-42c8-886e-366fe6b41d12": {
-    "asset": 1517726886000,
-    "meta": 1517726886000,
+    "asset": 1517840969000,
+    "meta": 1517840969000,
     "relativePath": "resources/prefabs/bloxx.prefab"
   },
   "a50c793a-fe5f-4547-8a3b-858e52af7ecd": {
-    "asset": 1517724935000,
+    "asset": 1517724965000,
     "meta": 1517724935000,
     "relativePath": "Script/game/bloxx"
   },
@@ -355,13 +355,18 @@
     "relativePath": "Script/game/bloxx/BloxxScript.ts"
   },
   "3e3d4800-f531-45c6-918e-944022aeb4af": {
-    "asset": 1517726905000,
+    "asset": 1517726930000,
     "meta": 1517726905000,
     "relativePath": "Script/game/game"
   },
+  "47bab1a0-7426-4d7d-a39f-f3a0d8ea9293": {
+    "asset": 1517842779000,
+    "meta": 1517842783000,
+    "relativePath": "Script/core/GameUtils.ts"
+  },
   "545b686a-527a-4416-aa99-4ba05c0aea4c": {
-    "asset": 1517726972000,
-    "meta": 1517726975000,
+    "asset": 1517842866000,
+    "meta": 1517842875000,
     "relativePath": "Script/game/game/GameScript.ts"
   }
 }
