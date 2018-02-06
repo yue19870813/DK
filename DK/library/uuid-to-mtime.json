@@ -290,8 +290,8 @@
     "relativePath": "Scene/MainScene.fire"
   },
   "92adb974-7ad2-46e4-b25d-9063099928bf": {
-    "asset": 1517928230000,
-    "meta": 1517928230000,
+    "asset": 1517929857000,
+    "meta": 1517929857000,
     "relativePath": "Scene/GameScene.fire"
   },
   "e38fe1c3-df3c-4330-a27a-7c075d920052": {
@@ -370,8 +370,18 @@
     "relativePath": "Script/Config.ts"
   },
   "545b686a-527a-4416-aa99-4ba05c0aea4c": {
-    "asset": 1517928937000,
-    "meta": 1517928945000,
+    "asset": 1517929368000,
+    "meta": 1517929749000,
     "relativePath": "Script/game/game/GameScript.ts"
+  },
+  "24aa289d-bbcc-4a8f-9e2b-7c71e3dab4ce": {
+    "asset": 1517929804000,
+    "meta": 1517929804000,
+    "relativePath": "resources/animate"
+  },
+  "f1324cca-7f87-499a-964b-49805402b1db": {
+    "asset": 1517929855000,
+    "meta": 1517929855000,
+    "relativePath": "resources/animate/rope.anim"
   }
 }
