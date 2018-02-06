@@ -1,5 +1,6 @@
 import { GameControler } from "./../GameControler";
 import { GameUtils } from "./../../core/GameUtils";
+import { Config } from "./../../Config";
 
 const {ccclass, property} = cc._decorator;
 
@@ -40,6 +41,10 @@ export default class GameScript extends cc.Component {
     // ------------------- 箱子相关属性 --------------------
     /** 箱子是否处于掉落状态 */
     _isInDrop:boolean = false;
+    /** 成功叠起的箱子数量 */
+    _succBoxCount:number = 0;
+    /** 得分 */
+    _score:number = 0;
 
     start () {
         this._currMaxAngle = 30;
@@ -104,6 +109,14 @@ export default class GameScript extends cc.Component {
             if (GameUtils.containsRect(box1, box2)) {
                 // 碰撞成功
                 this._isInDrop = false;
+                bloxx_drop.name = "bloxx";
+                bloxx.name = "other";
+                // 成功叠起箱子的数量
+                this._succBoxCount++;
+                this._boxShift();
+                this.addBox();
+            } else if (bloxx_drop.y < bloxx_drop.y) {
+                // TODO: 没有落在正确位置，游戏失败。
             }
         }
     }
@@ -121,4 +134,26 @@ export default class GameScript extends cc.Component {
         }
     }
 
+    /**
+     * 当箱子超过一定高度后向下位移，并将超出屏幕的箱子移除。
+     */
+    _boxShift () {
+        let boxes = this.towerNode.children;
+        if (boxes.length <= 4) {
+            return;
+        }
+        for (let box of boxes) {
+            if (box.y < 300) {
+                box.removeFromParent(true);
+            } else {
+                let action = cc.moveBy(0.2, cc.p(0, -Config.BOX_HEIGHT));
+                box.runAction(action);
+            }
+        }
+    }
+
+    /** 背景线性下移，叠的越高，位移幅度越小 */
+    _bgMoveDown () {
+        // TODO:
+    }
 }
