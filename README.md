@@ -3,7 +3,7 @@
 - [x] The box collision.
 - [x] Boxes vertical shift and romove.
 - [ ] Rope animation.
-- [ ] Background move logic.
+- [x] Background move logic.
 - [ ] Get score and special box.
 - [ ] Background elements, eg: plane.
 - [ ] Box hit box partical.
@@ -12,5 +12,4 @@
 - [ ] Add wechat API.
 - [ ] Game UI.
 - [ ] Update engine to 1.9
-- [ ] 
 
