@@ -1,9 +1,46 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "",
+  "_name": "rope",
   "_objFlags": 0,
-  "_duration": 0,
+  "_rawFiles": null,
+  "_duration": 2.6666666666666665,
   "sample": 60,
-  "curveData": {},
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "targetNode": {
+        "props": {}
+      }
+    },
+    "props": {
+      "rotation": [
+        {
+          "frame": 0,
+          "value": 10,
+          "curve": "cubicIn"
+        },
+        {
+          "frame": 0.6666666666666666,
+          "value": 0,
+          "curve": "cubicOut"
+        },
+        {
+          "frame": 1.3333333333333333,
+          "value": -10,
+          "curve": "cubicIn"
+        },
+        {
+          "frame": 2,
+          "value": 0,
+          "curve": "cubicOut"
+        },
+        {
+          "frame": 2.6666666666666665,
+          "value": 10
+        }
+      ]
+    }
+  },
   "events": []
 }

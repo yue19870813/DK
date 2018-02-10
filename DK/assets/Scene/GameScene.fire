@@ -497,13 +497,15 @@
       "__id__": 9
     },
     "_enabled": true,
-    "_defaultClip": null,
+    "_defaultClip": {
+      "__uuid__": "f1324cca-7f87-499a-964b-49805402b1db"
+    },
     "_clips": [
       {
         "__uuid__": "f1324cca-7f87-499a-964b-49805402b1db"
       }
     ],
-    "playOnLoad": false
+    "playOnLoad": true
   },
   {
     "__type__": "cc.Node",
