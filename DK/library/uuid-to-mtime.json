@@ -290,8 +290,8 @@
     "relativePath": "Scene/MainScene.fire"
   },
   "92adb974-7ad2-46e4-b25d-9063099928bf": {
-    "asset": 1517929857000,
-    "meta": 1517929857000,
+    "asset": 1518264982000,
+    "meta": 1518264983000,
     "relativePath": "Scene/GameScene.fire"
   },
   "e38fe1c3-df3c-4330-a27a-7c075d920052": {
@@ -364,11 +364,6 @@
     "meta": 1517928584000,
     "relativePath": "Script/Config.ts"
   },
-  "545b686a-527a-4416-aa99-4ba05c0aea4c": {
-    "asset": 1517929368000,
-    "meta": 1517929749000,
-    "relativePath": "Script/game/game/GameScript.ts"
-  },
   "24aa289d-bbcc-4a8f-9e2b-7c71e3dab4ce": {
     "asset": 1517929855000,
     "meta": 1517929804000,
@@ -383,5 +378,10 @@
     "asset": 1518263661000,
     "meta": 1518263704000,
     "relativePath": "Script/core/GameUtils.ts"
+  },
+  "545b686a-527a-4416-aa99-4ba05c0aea4c": {
+    "asset": 1518264843000,
+    "meta": 1518264852000,
+    "relativePath": "Script/game/game/GameScript.ts"
   }
 }

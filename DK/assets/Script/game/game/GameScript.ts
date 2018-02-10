@@ -28,6 +28,13 @@ export default class GameScript extends cc.Component {
     })
     towerNode:cc.Node = null;
 
+    @property({
+        type: cc.Node,
+        displayName: "背景节点",
+        readonly: true
+    })
+    bgNode:cc.Node = null;
+
     // ------------------- 绳索相关属性 --------------------
     /** 当前回合吊索最大角度 */
     _currMaxAngle:number = 0;
@@ -150,10 +157,30 @@ export default class GameScript extends cc.Component {
                 box.runAction(action);
             }
         }
+        // 箱子位移时，背景也同步位移
+        this._bgMoveDown();
     }
 
     /** 背景线性下移，叠的越高，位移幅度越小 */
     _bgMoveDown () {
-        // TODO:
+        if (this._succBoxCount < 10) {
+            let action = cc.moveBy(0.2, cc.p(0, -Config.BOX_HEIGHT));
+            this.bgNode.runAction(action);
+        } else if (this._succBoxCount < 20 && this._succBoxCount >= 10) {
+            let action = cc.moveBy(0.2, cc.p(0, -Config.BOX_HEIGHT / 2));
+            this.bgNode.runAction(action);
+        } else if (this._succBoxCount < 50 && this._succBoxCount >= 20) {
+            let action = cc.moveBy(0.2, cc.p(0, -Config.BOX_HEIGHT / 4));
+            this.bgNode.runAction(action);
+        } else if (this._succBoxCount < 100 && this._succBoxCount >= 50) {
+            let action = cc.moveBy(0.2, cc.p(0, -Config.BOX_HEIGHT / 10));
+            this.bgNode.runAction(action);
+        } else if (this._succBoxCount < 200 && this._succBoxCount >= 100) {
+            let action = cc.moveBy(0.2, cc.p(0, -Config.BOX_HEIGHT / 20));
+            this.bgNode.runAction(action);
+        } else {
+            let action = cc.moveBy(0.2, cc.p(0, -1));
+            this.bgNode.runAction(action);
+        }
     }
 }
