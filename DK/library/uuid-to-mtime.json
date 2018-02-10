@@ -225,7 +225,7 @@
     "relativePath": "Scene"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1517726999000,
+    "asset": 1517928229000,
     "meta": 1510996847000,
     "relativePath": "Script"
   },
@@ -270,7 +270,7 @@
     "relativePath": "Script/game"
   },
   "ea36d736-ee9c-441b-b73a-e11eb5ca0099": {
-    "asset": 1517666810000,
+    "asset": 1517841266000,
     "meta": 1517666810000,
     "relativePath": "Script/core"
   },
@@ -325,7 +325,7 @@
     "relativePath": "Texture/bg"
   },
   "b4225775-ce39-4a8a-9b9b-60ff32cb3643": {
-    "asset": 1517721117000,
+    "asset": 1517929812000,
     "meta": 1517720896000,
     "relativePath": "resources"
   },
@@ -359,11 +359,6 @@
     "meta": 1517726905000,
     "relativePath": "Script/game/game"
   },
-  "47bab1a0-7426-4d7d-a39f-f3a0d8ea9293": {
-    "asset": 1517844286000,
-    "meta": 1517927322000,
-    "relativePath": "Script/core/GameUtils.ts"
-  },
   "2f358b69-5fee-4e01-8f7a-137f14c0d3d1": {
     "asset": 1517928373000,
     "meta": 1517928584000,
@@ -375,7 +370,7 @@
     "relativePath": "Script/game/game/GameScript.ts"
   },
   "24aa289d-bbcc-4a8f-9e2b-7c71e3dab4ce": {
-    "asset": 1517929804000,
+    "asset": 1517929855000,
     "meta": 1517929804000,
     "relativePath": "resources/animate"
   },
@@ -383,5 +378,10 @@
     "asset": 1517929855000,
     "meta": 1517929855000,
     "relativePath": "resources/animate/rope.anim"
+  },
+  "47bab1a0-7426-4d7d-a39f-f3a0d8ea9293": {
+    "asset": 1518263661000,
+    "meta": 1518263704000,
+    "relativePath": "Script/core/GameUtils.ts"
   }
 }

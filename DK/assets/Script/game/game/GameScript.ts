@@ -115,7 +115,7 @@ export default class GameScript extends cc.Component {
                 this._succBoxCount++;
                 this._boxShift();
                 this.addBox();
-            } else if (bloxx_drop.y < bloxx_drop.y) {
+            } else if (bloxx_drop.y <= 0) { // 箱子落地也算失败
                 // TODO: 没有落在正确位置，游戏失败。
             }
         }
