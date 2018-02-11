@@ -3,7 +3,7 @@
   "_name": "rope",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 2.6666666666666665,
+  "_duration": 3.9833333333333334,
   "sample": 60,
   "speed": 1,
   "wrapMode": 2,
@@ -17,27 +17,27 @@
       "rotation": [
         {
           "frame": 0,
-          "value": 10,
+          "value": 20,
           "curve": "cubicIn"
         },
         {
-          "frame": 0.6666666666666666,
+          "frame": 0.9833333333333333,
           "value": 0,
           "curve": "cubicOut"
-        },
-        {
-          "frame": 1.3333333333333333,
-          "value": -10,
-          "curve": "cubicIn"
         },
         {
           "frame": 2,
+          "value": -20,
+          "curve": "cubicIn"
+        },
+        {
+          "frame": 2.9833333333333334,
           "value": 0,
           "curve": "cubicOut"
         },
         {
-          "frame": 2.6666666666666665,
-          "value": 10
+          "frame": 3.9833333333333334,
+          "value": 20
         }
       ]
     }
