@@ -2,7 +2,7 @@
 - [x] Initialize the game scene.
 - [x] The box collision.
 - [x] Boxes vertical shift and romove.
-- [ ] Rope animation.
+- [x] Rope animation.
 - [x] Background move logic.
 - [ ] Get score and special box.
 - [ ] Background elements, eg: plane.
