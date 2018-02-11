@@ -290,8 +290,8 @@
     "relativePath": "Scene/MainScene.fire"
   },
   "92adb974-7ad2-46e4-b25d-9063099928bf": {
-    "asset": 1518342089000,
-    "meta": 1518342089000,
+    "asset": 1518343129000,
+    "meta": 1518343129000,
     "relativePath": "Scene/GameScene.fire"
   },
   "e38fe1c3-df3c-4330-a27a-7c075d920052": {
@@ -335,8 +335,8 @@
     "relativePath": "resources/prefabs"
   },
   "40ad8a8e-afdc-42c8-886e-366fe6b41d12": {
-    "asset": 1517840969000,
-    "meta": 1517840969000,
+    "asset": 1518343213000,
+    "meta": 1518343213000,
     "relativePath": "resources/prefabs/bloxx.prefab"
   },
   "a50c793a-fe5f-4547-8a3b-858e52af7ecd": {
@@ -383,5 +383,15 @@
     "asset": 1518264843000,
     "meta": 1518264852000,
     "relativePath": "Script/game/game/GameScript.ts"
+  },
+  "b85c5459-2fb6-4015-9862-043398f46d3f": {
+    "asset": 1518342880000,
+    "meta": 1518342880000,
+    "relativePath": "resources/particle"
+  },
+  "64df7380-574e-4ede-8e10-f3f0695d7256": {
+    "asset": 1518342845000,
+    "meta": 1518342880000,
+    "relativePath": "resources/particle/particle_texture.plist"
   }
 }
