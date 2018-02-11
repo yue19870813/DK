@@ -36,14 +36,7 @@ export default class GameScript extends cc.Component {
     bgNode:cc.Node = null;
 
     // ------------------- 绳索相关属性 --------------------
-    /** 当前回合吊索最大角度 */
-    _currMaxAngle:number = 0;
-    /** 当前吊索角度 */
-    _currAngle:number = 0;
-    /** 方向状态 true：正向， false：反向 */
-    _directState:boolean = true;
-    /** 吊索旋转加速度 */
-    _ropeSpeed:number = 0.3;
+
 
     // ------------------- 箱子相关属性 --------------------
     /** 箱子是否处于掉落状态 */
@@ -54,7 +47,6 @@ export default class GameScript extends cc.Component {
     _score:number = 0;
 
     start () {
-        this._currMaxAngle = 30;
         this.addBox();
     }
 
@@ -78,31 +70,7 @@ export default class GameScript extends cc.Component {
 
     /** 更新吊索逻辑 */
     updateRope (dt) {
-        if (this._directState) {
-            this._currAngle += this._ropeSpeed;;
-        } else {
-            this._currAngle -= this._ropeSpeed;
-        }
-        // 摇摆到最大角度后往回摇摆.
-        if (this._currAngle >= this._currMaxAngle) {
-            this._directState = false;
-            // this._ropeSpeed = 0.1;
-        } else if (this._currAngle <= -this._currMaxAngle) {
-            this._directState = true;
-            // this._ropeSpeed = 0.1;
-        }
-        // 处理加速度
-        // if (this._currAngle > 0 && this._directState) { // 左上
-        //     this._ropeSpeed += 0.02;
-        // } else if (this._currAngle > 0 && !this._directState) { // 左下
-        //     this._ropeSpeed += 0.02;
-        // } else if (this._currAngle < 0 && !this._directState) { // 右上
-        //     this._ropeSpeed += 0.02;
-        // } else if (this._currAngle < 0 && this._directState) { // 右下
-        //     this._ropeSpeed += 0.02;
-        // }
-        // console.log(this._currAngle + "=====" + this._directState);
-        this.rope.rotation = this._currAngle;
+  
     }
 
     // 更新掉落箱子逻辑
@@ -120,6 +88,13 @@ export default class GameScript extends cc.Component {
                 bloxx.name = "other";
                 // 成功叠起箱子的数量
                 this._succBoxCount++;
+                if (GameUtils.isPerfect(box1, box2)) {
+                    let pNode = bloxx.getChildByName("particleNode");
+                    let particle = pNode.getComponent(cc.ParticleSystem);
+                    particle.resetSystem();
+                } else if (GameUtils.isCrash(box1, box2)) {
+                    
+                }
                 this._boxShift();
                 this.addBox();
             } else if (bloxx_drop.y <= 0) { // 箱子落地也算失败

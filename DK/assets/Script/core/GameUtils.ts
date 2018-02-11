@@ -34,4 +34,16 @@ export class GameUtils {
         }
         return false;
     }
+
+    /**
+     * 判断两个矩形是否完美碰撞，前提时已碰撞
+     * @param rect1 
+     * @param rect2 
+     */
+    public static isPerfect (rect1:cc.Rect, rect2:cc.Rect):boolean {
+        if (Math.abs(rect1.x - rect2.x) < 50) {
+            return true;
+        }
+        return false;
+    }
 }
