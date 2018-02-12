@@ -290,8 +290,8 @@
     "relativePath": "Scene/MainScene.fire"
   },
   "92adb974-7ad2-46e4-b25d-9063099928bf": {
-    "asset": 1518344383000,
-    "meta": 1518344383000,
+    "asset": 1518428449000,
+    "meta": 1518428449000,
     "relativePath": "Scene/GameScene.fire"
   },
   "e38fe1c3-df3c-4330-a27a-7c075d920052": {
@@ -325,7 +325,7 @@
     "relativePath": "Texture/bg"
   },
   "b4225775-ce39-4a8a-9b9b-60ff32cb3643": {
-    "asset": 1517929812000,
+    "asset": 1518342880000,
     "meta": 1517720896000,
     "relativePath": "resources"
   },
@@ -335,8 +335,8 @@
     "relativePath": "resources/prefabs"
   },
   "40ad8a8e-afdc-42c8-886e-366fe6b41d12": {
-    "asset": 1518344370000,
-    "meta": 1518344370000,
+    "asset": 1518428448000,
+    "meta": 1518428448000,
     "relativePath": "resources/prefabs/bloxx.prefab"
   },
   "a50c793a-fe5f-4547-8a3b-858e52af7ecd": {
@@ -365,7 +365,7 @@
     "relativePath": "Script/Config.ts"
   },
   "24aa289d-bbcc-4a8f-9e2b-7c71e3dab4ce": {
-    "asset": 1517929855000,
+    "asset": 1518341928000,
     "meta": 1517929804000,
     "relativePath": "resources/animate"
   },
@@ -390,8 +390,8 @@
     "relativePath": "Script/core/GameUtils.ts"
   },
   "545b686a-527a-4416-aa99-4ba05c0aea4c": {
-    "asset": 1518344463000,
-    "meta": 1518344476000,
+    "asset": 1518428270000,
+    "meta": 1518428272000,
     "relativePath": "Script/game/game/GameScript.ts"
   }
 }
