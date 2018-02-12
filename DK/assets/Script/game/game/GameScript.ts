@@ -108,7 +108,7 @@ export default class GameScript extends cc.Component {
                 bloxx.name = "other";
                 // 成功叠起箱子的数量
                 this._succBoxCount++;
-                
+                // 是否完美落下
                 if (GameUtils.isPerfect(rect1, rect2)) {
                     let pNode = bloxx.getChildByName("particleNode");
                     let particle = pNode.getComponent(cc.ParticleSystem);
