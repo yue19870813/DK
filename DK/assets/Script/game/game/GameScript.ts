@@ -64,10 +64,8 @@ export default class GameScript extends cc.Component {
     // ------------------- 得分相关属性 --------------------
     /** 得分 */
     _score:number = 0;
-    /** 是否在连击状态 */
-    _isInCrit:boolean = false;
     /** 连击次数 */
-    _critCount:number = 0;
+    _critCount:number = 1;
 
     start () {
         this.addBox();
@@ -125,10 +123,12 @@ export default class GameScript extends cc.Component {
                     let pNode = bloxx.getChildByName("particleNode");
                     let particle = pNode.getComponent(cc.ParticleSystem);
                     particle.resetSystem();
-                    this._score += 5;
+                    this._score += (5 * this._critCount);
+                    this._critCount++;
                 } else if (GameUtils.isCrash(rect1, rect2)) {
                     // TODO:
                 } else {
+                    this._critCount = 1;
                     this._score += 1;
                 }
                 this.scoreLabel.string = "Score:" + this._score;
