@@ -6,7 +6,7 @@
 - [x] Background move logic.
 - [ ] Get score and special box.
 - [ ] Background elements, eg: plane.
-- [ ] Box hit box partical.
+- [x] Box hit box partical.
 - [ ] Boxes waggle.
 - [ ] Upload to wechat game and debug.
 - [ ] Add wechat API.
