@@ -46,6 +46,10 @@ export default class GameScript extends cc.Component {
 
 
     // ------------------- 箱子相关属性 --------------------
+    /** 初始速度 */
+    _initSpeed:number = 3;
+    /** 下落的加速度 */
+    _velocity:number = 0.5;
     /** 箱子是否处于掉落状态 */
     _isInDrop:boolean = false;
     /** 成功叠起的箱子数量 */
@@ -85,7 +89,8 @@ export default class GameScript extends cc.Component {
         let bloxx_drop:cc.Node = this.dropNode.getChildByName("bloxx_drop");
         let bloxx:cc.Node = this.towerNode.getChildByName("bloxx");
         if (bloxx && bloxx_drop) {
-            bloxx_drop.y -= 3;
+            bloxx_drop.y -= this._initSpeed;
+            this._initSpeed += this._velocity;
             let box1 = bloxx_drop.getBoundingBox();
             let box2 = bloxx.getBoundingBox();
             let box1Pos = this.dropNode.convertToWorldSpaceAR(bloxx_drop.position);
@@ -109,7 +114,7 @@ export default class GameScript extends cc.Component {
                     let particle = pNode.getComponent(cc.ParticleSystem);
                     particle.resetSystem();
                 } else if (GameUtils.isCrash(rect1, rect2)) {
-                    
+                    // TODO:
                 }
                 this._boxShift();
                 this.addBox();
@@ -129,6 +134,7 @@ export default class GameScript extends cc.Component {
             bloxx.position = rPos;
             // 箱子开始掉落
             this._isInDrop = true;
+            this._initSpeed = 3;
         }
     }
 

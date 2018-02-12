@@ -395,8 +395,8 @@
     "relativePath": "resources/animate/waggle_1.anim"
   },
   "545b686a-527a-4416-aa99-4ba05c0aea4c": {
-    "asset": 1518430448000,
-    "meta": 1518430449000,
+    "asset": 1518431471000,
+    "meta": 1518431473000,
     "relativePath": "Script/game/game/GameScript.ts"
   }
 }
