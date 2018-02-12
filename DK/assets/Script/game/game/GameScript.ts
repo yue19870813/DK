@@ -30,6 +30,13 @@ export default class GameScript extends cc.Component {
 
     @property({
         type: cc.Node,
+        displayName: "掉落节点",
+        readonly: true
+    })
+    dropNode:cc.Node = null;
+
+    @property({
+        type: cc.Node,
         displayName: "背景节点",
         readonly: true
     })
@@ -75,24 +82,33 @@ export default class GameScript extends cc.Component {
 
     // 更新掉落箱子逻辑
     updateDropBox (dt) {
-        let bloxx_drop:cc.Node = this.towerNode.getChildByName("bloxx_drop");
+        let bloxx_drop:cc.Node = this.dropNode.getChildByName("bloxx_drop");
         let bloxx:cc.Node = this.towerNode.getChildByName("bloxx");
         if (bloxx && bloxx_drop) {
             bloxx_drop.y -= 3;
             let box1 = bloxx_drop.getBoundingBox();
             let box2 = bloxx.getBoundingBox();
-            if (GameUtils.containsRect(box1, box2)) {
+            let box1Pos = this.dropNode.convertToWorldSpaceAR(bloxx_drop.position);
+            let box2Pos = this.towerNode.convertToWorldSpaceAR(bloxx.position);
+            let rect1 = new cc.Rect(box1Pos.x, box1Pos.y, box1.width, box1.height);
+            let rect2 = new cc.Rect(box2Pos.x, box2Pos.y, box2.width, box2.height);
+            if (GameUtils.containsRect(rect1, rect2)) {
+                let newPos = this.dropNode.convertToWorldSpaceAR(bloxx_drop.position);
+                let resultPos = this.towerNode.convertToNodeSpaceAR(newPos);
+                bloxx_drop.position = resultPos;
+                bloxx_drop.parent = this.towerNode;
                 // 碰撞成功
                 this._isInDrop = false;
                 bloxx_drop.name = "bloxx";
                 bloxx.name = "other";
                 // 成功叠起箱子的数量
                 this._succBoxCount++;
-                if (GameUtils.isPerfect(box1, box2)) {
+                
+                if (GameUtils.isPerfect(rect1, rect2)) {
                     let pNode = bloxx.getChildByName("particleNode");
                     let particle = pNode.getComponent(cc.ParticleSystem);
                     particle.resetSystem();
-                } else if (GameUtils.isCrash(box1, box2)) {
+                } else if (GameUtils.isCrash(rect1, rect2)) {
                     
                 }
                 this._boxShift();
@@ -108,8 +124,8 @@ export default class GameScript extends cc.Component {
         let bloxx:cc.Node = this.targetNode.getChildByName("bloxx_drop");
         if (bloxx) {
             let wPos = this.targetNode.convertToWorldSpaceAR(bloxx.position);
-            let rPos = this.towerNode.convertToNodeSpaceAR(wPos);
-            bloxx.parent = this.towerNode;
+            let rPos = this.dropNode.convertToNodeSpaceAR(wPos);
+            bloxx.parent = this.dropNode;
             bloxx.position = rPos;
             // 箱子开始掉落
             this._isInDrop = true;

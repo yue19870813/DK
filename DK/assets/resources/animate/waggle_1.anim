@@ -1,0 +1,74 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "waggle_1",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 4,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            0,
+            -996
+          ]
+        },
+        {
+          "frame": 0.9833333333333333,
+          "value": [
+            -40,
+            -1010
+          ]
+        },
+        {
+          "frame": 2,
+          "value": [
+            0,
+            -996
+          ]
+        },
+        {
+          "frame": 2.9833333333333334,
+          "value": [
+            40,
+            -1010
+          ]
+        },
+        {
+          "frame": 4,
+          "value": [
+            0,
+            -996
+          ]
+        }
+      ],
+      "rotation": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 0.9833333333333333,
+          "value": -0.5
+        },
+        {
+          "frame": 2,
+          "value": 0
+        },
+        {
+          "frame": 2.9833333333333334,
+          "value": 0.5
+        },
+        {
+          "frame": 4,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": []
+}
