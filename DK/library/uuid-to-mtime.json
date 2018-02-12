@@ -290,8 +290,8 @@
     "relativePath": "Scene/MainScene.fire"
   },
   "92adb974-7ad2-46e4-b25d-9063099928bf": {
-    "asset": 1518432553000,
-    "meta": 1518432553000,
+    "asset": 1518433006000,
+    "meta": 1518433006000,
     "relativePath": "Scene/GameScene.fire"
   },
   "e38fe1c3-df3c-4330-a27a-7c075d920052": {
@@ -395,8 +395,8 @@
     "relativePath": "resources/animate/waggle_1.anim"
   },
   "545b686a-527a-4416-aa99-4ba05c0aea4c": {
-    "asset": 1518432254000,
-    "meta": 1518432357000,
+    "asset": 1518432976000,
+    "meta": 1518432979000,
     "relativePath": "Script/game/game/GameScript.ts"
   }
 }

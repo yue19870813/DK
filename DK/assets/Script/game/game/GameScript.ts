@@ -42,6 +42,13 @@ export default class GameScript extends cc.Component {
     })
     bgNode:cc.Node = null;
 
+    @property({
+        type: cc.Label,
+        displayName: "得分",
+        readonly: true
+    })
+    scoreLabel:cc.Label = null;
+
     // ------------------- 绳索相关属性 --------------------
 
 
@@ -54,8 +61,13 @@ export default class GameScript extends cc.Component {
     _isInDrop:boolean = false;
     /** 成功叠起的箱子数量 */
     _succBoxCount:number = 0;
+    // ------------------- 得分相关属性 --------------------
     /** 得分 */
     _score:number = 0;
+    /** 是否在连击状态 */
+    _isInCrit:boolean = false;
+    /** 连击次数 */
+    _critCount:number = 0;
 
     start () {
         this.addBox();
@@ -113,9 +125,13 @@ export default class GameScript extends cc.Component {
                     let pNode = bloxx.getChildByName("particleNode");
                     let particle = pNode.getComponent(cc.ParticleSystem);
                     particle.resetSystem();
+                    this._score += 5;
                 } else if (GameUtils.isCrash(rect1, rect2)) {
                     // TODO:
+                } else {
+                    this._score += 1;
                 }
+                this.scoreLabel.string = "Score:" + this._score;
                 this._boxShift();
                 this.addBox();
             } else if (bloxx_drop.y <= 0) { // 箱子落地也算失败
